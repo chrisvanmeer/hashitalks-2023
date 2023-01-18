@@ -1,253 +1,1594 @@
-%title: How to deploy your HashiCorp stack with Ansible under 15 minutes
-%author: Chris van Meer
-%date: 2022-12-01
+---
+theme: hashitheme.json
+author: Chris van Meer
+date: AT Computing
+paging: HashiTalks 2023
+---
 
--> # HashiTalks 2023 <-
+# Imagine
 
--> Welcome <-
+---
 
--------------------------------------------------
+# Imagine
 
--> # Agenda <-
+## Consultant
 
-* Introduction
-  * `whoami`?
-  * Why?
-  * How?
-* Setup
-  * Goal
-  * Infrastructure
-  * General deployment
-  * PKI
-  * Consul
-  * Vault
-  * Nomad
-  * Nomad / Vault integration && Nomad demo jobs
-  * Demo
-    * Traefik
-    * Web app
-* Recap
-* Resources
-* Contact
+---
 
--------------------------------------------------
+# Imagine
 
--> # Introduction <-
+## Consultant
 
-chris@atcomputing ~ $ `whoami`
+### Task
+
+---
+
+# Imagine
+
+## Consultant
+
+### Task
+
+```
+   1. Orchestration
+```
+
+---
+
+# Imagine
+
+## Consultant
+
+### Task
+
+```
+   1. Orchestration
+   2. Scalable
+```
+
+---
+
+# Imagine
+
+## Consultant
+
+### Task
+
+```
+   1. Orchestration
+   2. Scalable
+   3. Secure
+```
+
+---
+
+# Imagine
+
+## Consultant
+
+### Task
+
+```
+   1. Orchestration
+   2. Scalable
+   3. Secure
+   4. No Kubernetes
+```
+
+---
+
+# Imagine
+
+## Consultant
+
+### Task
+
+```
+   1. Orchestration
+   2. Scalable
+   3. Secure
+   4. No Kubernetes
+   5. Hashi...
+```
+
+---
+
+# Imagine
+
+## Consultant
+
+### Task
+
+```
+   1. Orchestration
+   2. Scalable
+   3. Secure
+   4. No Kubernetes
+   5. Hashi...
+   6. Configuration as Code
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+```
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [x] Containers
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [x] Containers
+   [x] Microservices
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [x] Containers
+   [x] Microservices
+   [x] Scalable
+
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [x] Containers
+   [x] Microservices
+   [x] Scalable
+
+```
+
+## Consul
+
+```
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [x] Containers
+   [x] Microservices
+   [x] Scalable
+
+```
+
+## Consul
+
+### Service networking solution
+
+```
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [x] Containers
+   [x] Microservices
+   [x] Scalable
+
+```
+
+## Consul
+
+### Service networking solution
+
+```
+   [x] Service mesh
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [x] Containers
+   [x] Microservices
+   [x] Scalable
+
+```
+
+## Consul
+
+### Service networking solution
+
+```
+   [x] Service mesh
+   [x] Works with Nomad
+
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [x] Containers
+   [x] Microservices
+   [x] Scalable
+
+```
+
+## Consul
+
+### Service networking solution
+
+```
+   [x] Service mesh
+   [x] Works with Nomad
+   [x] Scalable
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [x] Containers
+   [x] Microservices
+   [x] Scalable
+
+```
+
+## Consul
+
+### Service networking solution
+
+```
+   [x] Service mesh
+   [x] Works with Nomad
+   [x] Scalable
+   [x] Flexible
+
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [x] Containers
+   [x] Microservices
+   [x] Scalable
+
+```
+
+## Consul
+
+### Service networking solution
+
+```
+   [x] Service mesh
+   [x] Works with Nomad
+   [x] Scalable
+   [x] Flexible
+
+```
+
+## Vault
+
+```
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [x] Containers
+   [x] Microservices
+   [x] Scalable
+
+```
+
+## Consul
+
+### Service networking solution
+
+```
+   [x] Service mesh
+   [x] Works with Nomad
+   [x] Scalable
+   [x] Flexible
+
+```
+
+## Vault
+
+### Secrets management tool
+
+```
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [x] Containers
+   [x] Microservices
+   [x] Scalable
+
+```
+
+## Consul
+
+### Service networking solution
+
+```
+   [x] Service mesh
+   [x] Works with Nomad
+   [x] Scalable
+   [x] Flexible
+
+```
+
+## Vault
+
+### Secrets management tool
+
+```
+   [x] Sensitive data
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [x] Containers
+   [x] Microservices
+   [x] Scalable
+
+```
+
+## Consul
+
+### Service networking solution
+
+```
+   [x] Service mesh
+   [x] Works with Nomad
+   [x] Scalable
+   [x] Flexible
+
+```
+
+## Vault
+
+### Secrets management tool
+
+```
+   [x] Sensitive data
+   [x] Secure
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [x] Containers
+   [x] Microservices
+   [x] Scalable
+
+```
+
+## Consul
+
+### Service networking solution
+
+```
+   [x] Service mesh
+   [x] Works with Nomad
+   [x] Scalable
+   [x] Flexible
+
+```
+
+## Vault
+
+### Secrets management tool
+
+```
+   [x] Sensitive data
+   [x] Secure
+   [x] Works with Nomad
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [x] Containers
+   [x] Microservices
+   [x] Scalable
+
+```
+
+## Consul
+
+### Service networking solution
+
+```
+   [x] Service mesh
+   [x] Works with Nomad
+   [x] Scalable
+   [x] Flexible
+
+```
+
+## Vault
+
+### Secrets management tool
+
+```
+   [x] Sensitive data
+   [x] Secure
+   [x] Works with Nomad
+   [x] Works with Consul
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [x] Containers
+   [x] Microservices
+   [x] Scalable
+
+```
+
+## Consul
+
+### Service networking solution
+
+```
+   [x] Service mesh
+   [x] Works with Nomad
+   [x] Scalable
+   [x] Flexible
+
+```
+
+## Vault
+
+### Secrets management tool
+
+```
+   [x] Sensitive data
+   [x] Secure
+   [x] Works with Nomad
+   [x] Works with Consul
+   [x] Scalable
+
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [x] Containers
+   [x] Microservices
+   [x] Scalable
+
+```
+
+## Consul
+
+### Service networking solution
+
+```
+   [x] Service mesh
+   [x] Works with Nomad
+   [x] Scalable
+   [x] Flexible
+
+```
+
+## Vault
+
+### Secrets management tool
+
+```
+   [x] Sensitive data
+   [x] Secure
+   [x] Works with Nomad
+   [x] Works with Consul
+   [x] Scalable
+
+```
+
+## All boxes ticked
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [x] Containers
+   [x] Microservices
+   [x] Scalable
+
+```
+
+## Consul
+
+### Service networking solution
+
+```
+   [x] Service mesh
+   [x] Works with Nomad
+   [x] Scalable
+   [x] Flexible
+
+```
+
+## Vault
+
+### Secrets management tool
+
+```
+   [x] Sensitive data
+   [x] Secure
+   [x] Works with Nomad
+   [x] Works with Consul
+   [x] Scalable
+
+```
+
+## All boxes ticked
+
+### The saga begins
+
+---
+
+# HashiStack
+
+```
+```
+
+---
+
+# HashiStack
+
+```
+ 1. Three products
+```
+
+---
+
+# HashiStack
+
+```
+ 1. Three products
+ 2. Quick deploy
+```
+
+---
+
+# HashiStack
+
+```
+ 1. Three products
+ 2. Quick deploy
+ 3. On-premises
+```
+
+---
+
+# HashiStack
+
+```
+ 1. Three products
+ 2. Quick deploy
+ 3. On-premises
+ 4. Repetitive
+```
+
+---
+
+# HashiStack
+
+```
+ 1. Three products
+ 2. Quick deploy
+ 3. On-premises
+ 4. Repetitive
+```
+
+No complete integration guide...
+
+---
+
+# Many hours later
+
+```
+```
+
+---
+
+# Many hours later
+
+## Many cups of coffee later
+
+---
+
+# Many hours later
+
+## Many cups of coffee later
+
+### Many lines of code later
+
+---
+
+# Many hours later
+
+## Many cups of coffee later
+
+### Many lines of code later
+
+#### Many re-deployments later
+
+---
+
+# Many hours later
+
+## Many cups of coffee later
+
+### Many lines of code later
+
+#### Many re-deployments later
+
+##### Eureka
+
+---
+
+# Many hours later
+
+## Many cups of coffee later
+
+### Many lines of code later
+
+#### Many re-deployments later
+
+##### Eureka
+
+###### **Two months work**
+
+---
+
+# How?
+
+```
+```
+
+---
+
+# How?
+
+## Ansible
+
+---
+
+# How?
+
+## Ansible
+
+### Configuration management
+
+---
+
+# How?
+
+## Ansible
+
+### Configuration management
+
+```
+   1. Predictable
+```
+
+---
+
+# How?
+
+## Ansible
+
+### Configuration management
+
+```
+   1. Predictable
+   2. Idempotent
+```
+
+---
+
+# How?
+
+## Ansible
+
+### Configuration management
+
+```
+   1. Predictable
+   2. Idempotent
+   3. Modular
+```
+
+---
+
+# How?
+
+## Ansible
+
+### Configuration management
+
+```
+   1. Predictable
+   2. Idempotent
+   3. Modular
+   4. Zero-touch
+```
+
+---
+
+# {{ lightbulb }}
+
+## Share
+
+---
+
+# {{ lightbulb }}
+
+## Share
+
+```
+```
+
+### Cloud
+
+---
+
+# {{ lightbulb }}
+
+## Share
+
+```
+```
+
+### Cloud
+
+#### Terraform
+
+---
+
+# {{ lightbulb }}
+
+## Share
+
+```
+```
+
+### Cloud
+
+#### Terraform
+
+##### Infrastructure as code
+
+---
+
+# {{ lightbulb }}
+
+## Share
+
+```
+```
+
+### Cloud
+
+#### Terraform
+
+##### Infrastructure as code
+
+```
+```
+
+### Local
+
+---
+
+# {{ lightbulb }}
+
+## Share
+
+```
+```
+
+### Cloud
+
+#### Terraform
+
+##### Infrastructure as code
+
+```
+```
+
+### Local
+
+#### Multipass
+
+---
+
+# {{ lightbulb }}
+
+## Share
+
+```
+```
+
+### Cloud
+
+#### Terraform
+
+##### Infrastructure as code
+
+```
+```
+
+### Local
+
+#### Multipass
+
+##### Simulates cloud environment on local VM's
+
+---
+
+# {{ lightbulb }}
+
+## Share
+
+```
+```
+
+### Cloud
+
+#### Terraform
+
+##### Infrastructure as code
+
+```
+```
+
+### Local
+
+#### Multipass
+
+##### Simulates cloud environment on local VM's
+
+```
+```
+
+## In a repository near you
+
+---
+
+# {{ lightbulb }}
+
+## Share
+
+```
+```
+
+### Cloud
+
+#### Terraform
+
+##### Infrastructure as code
+
+```
+```
+
+### Local
+
+#### Multipass
+
+##### Simulates cloud environment on local VM's
+
+```
+```
+
+## In a repository near you
+
+### Save time
+
+---
+
+# `$ whoami`
+
+---
+
+# `$ whoami`
 
 ## Chris van Meer
-Consultant and trainer at AT Computing
 
-## Strong focus on
-Networking, Ansible, HashiCorp portfolio
+---
 
--------------------------------------------------
+# `$ whoami`
 
--> # Why? <-
+## Chris van Meer
 
-* Most demos use dev mode
-* TLS is always disabled
-* Complete integration guide was missing
-* Useable as quick test or demo environment
-* Most demos use Terraform as default
-* Needed something modular
-
--------------------------------------------------
-
--> # How? <-
-
-```text
-                                                      
-                             &@@@@@@@@@#              
-                        @@@@@@@@@@@@@@@@@@@@&         
-                     @@@@@@@@@@@@@@@@@@@@@@@@@@#      
-                   @@@@@@@@@@@@@@.  @@@@@@@@@@@@@#    
-                  @@@@@@@@@@@@@@.    @@@@@@@@@@@@@@   
-                 @@@@@@@@@@@@@@.  @%  @@@@@@@@@@@@@@  
-                #@@@@@@@@@@@@@   @@@#  @@@@@@@@@@@@@, 
-                &@@@@@@@@@@@@     @@@#  @@@@@@@@@@@@* 
-                *@@@@@@@@@@@   @@(   &#  @@@@@@@@@@@  
-                 @@@@@@@@@@   @@@@@@%     @@@@@@@@@#  
-                  @@@@@@@@   @@@@@@@@@@&   @@@@@@@%   
-                   /@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     
-                     ,@@@@@@@@@@@@@@@@@@@@@@@@@       
-                        ,@@@@@@@@@@@@@@@@@@@          
-                              .#&@@&&(                
+```
 ```
 
--------------------------------------------------
+### Consultant and trainer at AT Computing
 
--> # Setup / Goal <-
+---
 
-* Create a high available stateless web app
-* Load balanced
-* Running TLS
-* Integrate Consul, Vault and Nomad with each other
+# `$ whoami`
 
--------------------------------------------------
+## Chris van Meer
 
--> # Setup / Infrastructure <-
-
-```text
-       +---server1---+     +---server2---+     +---server3---+         
-       |             |     |             |     |             |         
-       | Consul (C)  |     | Consul (C)  |     | Consul (C)  |         
-       | Vault  (V)  | <-> | Vault  (V)  | <-> | Vault  (V)  |         
-       | Nomad  (N)  |     | Nomad  (N)  |     | Nomad  (N)  |         
-       |             |     |             |     |             |         
-       +-------------+     +-------------+     +-------------+         
-              +-------------------+-------------------+
-                                  |
-                                  +                    
-+---client1---+   +---client2---+   +---client3---+   +---client4---+
-|             |   |             |   |             |   |             |
-| C + V + N |  | C + V + N |  | C + V + N |  | C + V + N |
-| --------- ||  ---------  |   |  ---------  |   |  ---------  |
-|   Traefik   |   |   Web App   |   |   Web App   |   |   Web App   |
-|             |   |             |   |             |   |             |
-+-------------+   +-------------+   +-------------+   +-------------+
+```
 ```
 
--------------------------------------------------
+### Consultant and trainer at AT Computing
 
--> # Setup / General Deployment <-
+#### Based in The Netherlands
 
-* Multipass / Terraform
-  * Deploys instances
-  * Creates Ansible inventory
-  * Modifies local hosts file
+---
 
-Playbook run took 0 days, 0 hours, 2 minutes, 38 seconds
+# `$ whoami`
 
-* General server configuration
-  * apt packages
-  * hashicorp repository
-  * docker (clients)
-  * dnsmasq
-  * pip + some packages
-  * tools that should be standard
-    * atop, jq, lynx, tree, etc
+## Chris van Meer
 
-Playbook run took 0 days, 0 hours, 5 minutes, 7 seconds
+```
+```
 
--------------------------------------------------
+### Consultant and trainer at AT Computing
 
--> # Setup / PKI <-
+#### Based in The Netherlands
 
-* Creates a self-signed Certificate Authority
-* Distributes the CA certificate to servers and clients
-  * Places the CA certificate in the trusted store
-* Creates a certificate for our web app
+##### Learn you how to use open source products
 
-Playbook run took 0 days, 0 hours, 0 minutes, 27 seconds
+---
 
--------------------------------------------------
+# `$ whoami`
 
--> # Setup / Consul <-
+## Chris van Meer
 
-* Creates a Consul CA, server and client certificates
-* Creates an encryption key
-* Consul is bootstrapped - token is saved on workstation
-* Several Consul policies are created
-* Default Consul policy is modified
-  * To allow DNS lookups for dnsmasq
-* CNI (Container Network Interface) plugin is installed
+```
+```
 
-Playbook run took 0 days, 0 hours, 1 minutes, 2 seconds
+### Consultant and trainer at AT Computing
 
--------------------------------------------------
+#### Based in The Netherlands
 
--> # Setup / Vault <-
+##### Learn you how to use open source products
 
-* Creates a TLS certificate for the Vault nodes
-  * Signed by our private CA
-* Uses Consul as storage backend
-  * Creates Consul ACL tokens for Vault
-* Initializes Vault on server1
-* Unseals the Vault
-* Creates admin policy
-* Creates admin user - password is saved on workstation
-* Enables kv/2 secrets engine
-* Revokes initial root token
-* Enables logrotate for Vault
-* Enables auditing to file
+##### Help you with the implementation
 
-Playbook run took 0 days, 0 hours, 0 minutes, 36 seconds
+---
 
--------------------------------------------------
+# `$ whoami`
 
--> # Setup / Nomad <-
+## Chris van Meer
 
-* Creates a Nomad policy in Consul
-* Creates Consul ACL tokens for Nomad servers and clients
-* Nomad is bootstrapped - token is saved on workstation
-* Nomad token for operator is created
+```
+```
 
-Playbook run took 0 days, 0 hours, 0 minutes, 52 seconds
+### Consultant and trainer at AT Computing
 
--------------------------------------------------
+#### Based in The Netherlands
 
--> # Setup / Nomad + Vault integration && Nomad demo jobs <-
+##### Learn you how to use open source products
 
-* Nomad / Vault integration
-  * Creates a Vault policy for the demo apps
-  * Creates a Nomad server role in Vault
-  * Places the web app certificate in Vault
+##### Help you with the implementation
 
-Playbook run took 0 days, 0 hours, 0 minutes, 11 seconds
+```
+```
 
-* Demo jobs
-  * Starts Traefik
-  * Starts AT-Demo
+### Focus on
 
-Playbook run took 0 days, 0 hours, 0 minutes, 6 seconds
+---
 
--------------------------------------------------
+# `$ whoami`
 
--> # Setup / Demo / Traefik <-
+## Chris van Meer
 
-* Traefik is registered within Consul
-* Retrieves TLS certificates from Vault
+```
+```
 
--------------------------------------------------
+### Consultant and trainer at AT Computing
 
--> # Setup / Demo / Web App <-
+#### Based in The Netherlands
 
-* Pulls a container image
-* Registers itself within Consul
-* Registers itself within Traefik through tags
+##### Learn you how to use open source products
 
--------------------------------------------------
+##### Help you with the implementation
 
--> return 0 - Recap <-
+```
+```
 
-What have we achieved?
+### Focus on
 
-* We created a local infrastructure that
-  * Runs an integrated stack of HashiCorp products
-  * Showcases how you can deliver content on this platform
-  * That allow for you to test a deployment
-  * Or use this during a demonstration
-  * And we had some CLI-fun
+#### Networking
 
--------------------------------------------------
+---
 
--> # Resources <-
+# `$ whoami`
 
--> [Repo](https://github.com/chrisvanmeer/at-hashi-demo) <-
--> [Presentation](https://github.com/chrisvanmeer/hashitalks-2023)
+## Chris van Meer
 
--------------------------------------------------
+```
+```
 
--> # Contact <-
+### Consultant and trainer at AT Computing
 
-Email          [c.v.meer@atcomputing.nl](mailto:c.v.meer@atcomputing.nl)
-Website        [chrisvanmeer.nl](https://chrisvanmeer.nl)
-GitHub         [@chrisvanmeer](https://github.com/chrisvanmeer)
-LinkedIn       [chrisvanmeer](https://linkedin.com/in/chrisvanmeer)
-Reddit         [u/chrisvanmeer](https://www.reddit.com/user/chrisvanmeer)
-               [r/hashicorp](https://www.reddit.com/r/hashicorp)
-               [r/consul](https://www.reddit.com/r/consul)
-Discord        [The DevOps Lounge](https://discord.gg/devopslounge)
-Meetup         [Amsterdam HashiCorp User Group](https://www.meetup.com/amsterdam-hashicorp-user-group)
+#### Based in The Netherlands
+
+##### Learn you how to use open source products
+
+##### Help you with the implementation
+
+```
+```
+
+### Focus on
+
+#### Networking
+
+#### Ansible
+
+---
+
+# `$ whoami`
+
+## Chris van Meer
+
+```
+```
+
+### Consultant and trainer at AT Computing
+
+#### Based in The Netherlands
+
+##### Learn you how to use open source products
+
+##### Help you with the implementation
+
+```
+```
+
+### Focus on
+
+#### Networking
+
+#### Ansible
+
+#### Full HashiCorp Portfolio
+
+---
+
+# `$ whoami`
+
+## Chris van Meer
+
+```
+```
+
+### Consultant and trainer at AT Computing
+
+#### Based in The Netherlands
+
+##### Learn you how to use open source products
+
+##### Help you with the implementation
+
+```
+```
+
+### Focus on
+
+#### Networking
+
+#### Ansible
+
+#### Full HashiCorp Portfolio
+
+```
+```
+
+### Co-organizer Amsterdam HUG
+
+---
+
+# Demo
+
+---
+
+# Demo
+
+```
+ 1. Integrate Consul, Vault and Nomad
+```
+
+---
+
+# Demo
+
+```
+ 1. Integrate Consul, Vault and Nomad
+ 2. Deploy a web app
+```
+
+---
+
+# Demo
+
+```
+ 1. Integrate Consul, Vault and Nomad
+ 2. Deploy a web app
+ 3. Load balanced
+```
+
+---
+
+# Demo
+
+```
+ 1. Integrate Consul, Vault and Nomad
+ 2. Deploy a web app
+ 3. Load balanced
+ 4. TLS
+```
+
+---
+
+# Demo
+
+```
+ 1. Integrate Consul, Vault and Nomad
+ 2. Deploy a web app
+ 3. Load balanced
+ 4. TLS
+ 5. No dev mode
+```
+
+---
+
+# Demo
+
+```
+ 1. Integrate Consul, Vault and Nomad
+ 2. Deploy a web app
+ 3. Load balanced
+ 4. TLS
+ 5. No dev mode
+ 6. Multipass
+```
+
+---
+
+# Demo
+
+```
+ 1. Integrate Consul, Vault and Nomad
+ 2. Deploy a web app
+ 3. Load balanced
+ 4. TLS
+ 5. No dev mode
+ 6. Multipass
+ 7. 100% CLI
+```
+
+---
+
+# Demo
+
+## Schematic overview
+
+```
+
+
+
+
+
+
+
+                         +---server1---+     +---server2---+     +---server3---+         
+                         |             |     |             |     |             |         
+                         | Consul (C)  |     | Consul (C)  |     | Consul (C)  |         
+                         | Vault  (V)  | <-> | Vault  (V)  | <-> | Vault  (V)  |         
+                         | Nomad  (N)  |     | Nomad  (N)  |     | Nomad  (N)  |         
+                         |             |     |             |     |             |         
+                         +-------------+     +-------------+     +-------------+         
+                                +-------------------+-------------------+
+                                                    |
+                                                    +                    
+                  +---client1---+   +---client2---+   +---client3---+   +---client4---+
+                  |             |   |             |   |             |   |             |
+                  |  C + V + N  |   |  C + V + N  |   |  C + V + N  |   |  C + V + N  |
+                  |  ---------  |   |  ---------  |   |  ---------  |   |  ---------  |
+                  |   Traefik   |   |   Web App   |   |   Web App   |   |   Web App   |
+                  |             |   |             |   |             |   |             |
+                  +-------------+   +-------------+   +-------------+   +-------------+
+```
+
+---
+
+# Demo
+
+## Setup
+
+### General Deployment
+
+#### Multipass
+
+```
+   1. Deploys instances
+   2. Creates Ansible inventory
+   3. Modifies local hosts file
+
+   Playbook run took 0 days, 0 hours, 2 minutes, 38 seconds
+
+```
+
+#### General server configuration
+
+```
+   1. apt packages
+   2. hashicorp repository
+   3. docker (clients)
+   4. dnsmasq
+   5. pip + some packages
+   6. tools that should be standard
+      1. atop, jq, lynx, tree, etc
+
+   Playbook run took 0 days, 0 hours, 5 minutes, 7 seconds
+```
+
+---
+
+# Demo
+
+## Setup
+
+### PKI
+
+```
+   1. Creates a self-signed Certificate Authority
+   2. Distributes the CA certificate to servers and clients
+   3. Places the CA certificate in the trusted store
+   4. Creates a certificate for our web app
+
+   Playbook run took 0 days, 0 hours, 0 minutes, 27 seconds
+```
+
+---
+
+# Demo
+
+## Setup
+
+### Consul
+
+```
+   1. Creates a Consul CA, server and client certificates
+   2. Creates an encryption key
+   3. Consul is bootstrapped - token is saved on workstation
+   4. Several Consul policies are created
+   5. Default Consul policy is modified
+      1. To allow DNS lookups for dnsmasq
+   6. CNI (Container Network Interface) plugin is installed
+
+   Playbook run took 0 days, 0 hours, 1 minutes, 2 seconds
+```
+
+---
+
+# Demo
+
+## Setup
+
+### Vault
+
+```
+   1. Creates a TLS certificate for the Vault nodes
+      1. Signed by our private CA
+   2. Uses Consul as storage backend
+      1. Creates Consul ACL tokens for Vault
+   3. Initializes Vault on server1
+   4. Unseals the Vault
+   5. Creates admin policy
+   6. Creates admin user - password is saved on workstation
+   7. Enables kv/2 secrets engine
+   8. Revokes initial root token
+   9. Enables logrotate for Vault
+   10. Enables auditing to file
+
+   Playbook run took 0 days, 0 hours, 0 minutes, 36 seconds
+```
+
+---
+
+# Demo
+
+## Setup
+
+### Nomad
+
+```
+   1. Creates a Nomad policy in Consul
+   2. Creates Consul ACL tokens for Nomad servers and clients
+   3. Nomad is bootstrapped - token is saved on workstation
+   4. Nomad token for operator is created
+
+   Playbook run took 0 days, 0 hours, 0 minutes, 52 seconds
+```
+
+---
+
+# Demo
+
+## Setup
+
+### Nomad + Vault integration && Nomad demo jobs
+
+#### Nomad / Vault integration
+
+```
+   1. Creates a Vault policy for the demo apps
+   2. Creates a Nomad server role in Vault
+   3. Places the web app certificate in Vault
+
+   Playbook run took 0 days, 0 hours, 0 minutes, 11 seconds
+```
+
+#### Demo jobs
+
+```
+   1. Starts Traefik
+   2. Starts AT-Demo
+
+   Playbook run took 0 days, 0 hours, 0 minutes, 6 seconds
+```
+
+---
+
+# Demo
+
+## Result
+
+### Traefik
+
+```
+   1. Traefik is registered within Consul
+   2. Retrieves TLS certificates from Vault
+
+```
+
+### Web App
+
+```
+   1. Pulls a container image
+   2. Registers itself within Consul
+   3. Registers itself within Traefik through tags
+```
+
+---
+
+# Demo
+
+## Recap
+
+### We created a local infrastructure that
+
+```
+   1. Runs an integrated stack of HashiCorp products
+   2. Showcases how you can deliver content on this platform
+   3. That allow for you to test a deployment
+   4. Or use this during a demonstration
+   5. And we had some CLI-fun
+```
+
+---
+
+# Epilogue
+
+## Resources
+
+```
+  1. Repository     https://github.com/chrisvanmeer/at-hashi-demo
+  2. Presentation   https://github.com/chrisvanmeer/hashitalks-2023
+```
+
+## Contact
+
+```
+1. Email            c.v.meer@atcomputing.nl
+2. Website          https://chrisvanmeer.nl
+3. GitHub           https://github.com/chrisvanmeer
+4. LinkedIn         https://linkedin.com/in/chrisvanmeer
+5. Reddit           https://www.reddit.com/user/chrisvanmeer
+                    https://www.reddit.com/r/hashicorp
+                    https://www.reddit.com/r/consul
+6. Discord          https://discord.gg/devopslounge
+7. Meetup           https://www.meetup.com/amsterdam-hashicorp-user-group
+```
+
+---
