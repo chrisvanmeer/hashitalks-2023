@@ -769,9 +769,8 @@ paging: HashiTalks 2023
  2. Quick deploy
  3. On-premises
  4. Repetitive
+ 5. No complete integration guide
 ```
-
-No complete integration guide...
 
 ---
 
@@ -907,13 +906,13 @@ No complete integration guide...
 
 ---
 
-# {{ lightbulb }}
+# &#128161;
 
 ## Share
 
 ---
 
-# {{ lightbulb }}
+# &#128161;
 
 ## Share
 
@@ -924,7 +923,7 @@ No complete integration guide...
 
 ---
 
-# {{ lightbulb }}
+# &#128161;
 
 ## Share
 
@@ -937,7 +936,7 @@ No complete integration guide...
 
 ---
 
-# {{ lightbulb }}
+# &#128161;
 
 ## Share
 
@@ -952,7 +951,7 @@ No complete integration guide...
 
 ---
 
-# {{ lightbulb }}
+# &#128161;
 
 ## Share
 
@@ -972,7 +971,7 @@ No complete integration guide...
 
 ---
 
-# {{ lightbulb }}
+# &#128161;
 
 ## Share
 
@@ -994,7 +993,7 @@ No complete integration guide...
 
 ---
 
-# {{ lightbulb }}
+# &#128161;
 
 ## Share
 
@@ -1018,7 +1017,7 @@ No complete integration guide...
 
 ---
 
-# {{ lightbulb }}
+# &#128161;
 
 ## Share
 
@@ -1047,7 +1046,7 @@ No complete integration guide...
 
 ---
 
-# {{ lightbulb }}
+# &#128161;
 
 ## Share
 
@@ -1123,7 +1122,7 @@ No complete integration guide...
 
 #### Based in The Netherlands
 
-##### Learn you how to use open source products
+##### Learn how to use open source products
 
 ---
 
@@ -1138,9 +1137,9 @@ No complete integration guide...
 
 #### Based in The Netherlands
 
-##### Learn you how to use open source products
+##### Learn how to use open source products
 
-##### Help you with the implementation
+##### Help with implementation
 
 ---
 
@@ -1155,9 +1154,9 @@ No complete integration guide...
 
 #### Based in The Netherlands
 
-##### Learn you how to use open source products
+##### Learn how to use open source products
 
-##### Help you with the implementation
+##### Help with implementation
 
 ```
 ```
@@ -1177,33 +1176,9 @@ No complete integration guide...
 
 #### Based in The Netherlands
 
-##### Learn you how to use open source products
+##### Learn how to use open source products
 
-##### Help you with the implementation
-
-```
-```
-
-### Focus on
-
-#### Networking
-
----
-
-# `$ whoami`
-
-## Chris van Meer
-
-```
-```
-
-### Consultant and trainer at AT Computing
-
-#### Based in The Netherlands
-
-##### Learn you how to use open source products
-
-##### Help you with the implementation
+##### Help with implementation
 
 ```
 ```
@@ -1212,8 +1187,6 @@ No complete integration guide...
 
 #### Networking
 
-#### Ansible
-
 ---
 
 # `$ whoami`
@@ -1227,9 +1200,9 @@ No complete integration guide...
 
 #### Based in The Netherlands
 
-##### Learn you how to use open source products
+##### Learn how to use open source products
 
-##### Help you with the implementation
+##### Help with implementation
 
 ```
 ```
@@ -1240,7 +1213,33 @@ No complete integration guide...
 
 #### Ansible
 
-#### Full HashiCorp Portfolio
+---
+
+# `$ whoami`
+
+## Chris van Meer
+
+```
+```
+
+### Consultant and trainer at AT Computing
+
+#### Based in The Netherlands
+
+##### Learn how to use open source products
+
+##### Help with implementation
+
+```
+```
+
+### Focus on
+
+#### Networking
+
+#### Ansible
+
+#### HashiCorp Portfolio
 
 ---
 
@@ -1255,9 +1254,9 @@ No complete integration guide...
 
 #### Based in The Netherlands
 
-##### Learn you how to use open source products
+##### Learn how to use open source products
 
-##### Help you with the implementation
+##### Help with implementation
 
 ```
 ```
@@ -1268,7 +1267,7 @@ No complete integration guide...
 
 #### Ansible
 
-#### Full HashiCorp Portfolio
+#### HashiCorp Portfolio
 
 ```
 ```
@@ -1283,91 +1282,113 @@ No complete integration guide...
 
 # Demo
 
+## Goal
+
+---
+
+# Demo
+
+## Goal
+
 ```
- 1. Integrate Consul, Vault and Nomad
+  1. Integrate Consul, Vault and Nomad
 ```
 
 ---
 
 # Demo
 
-```
- 1. Integrate Consul, Vault and Nomad
- 2. Deploy a web app
-```
-
----
-
-# Demo
+## Goal
 
 ```
- 1. Integrate Consul, Vault and Nomad
- 2. Deploy a web app
- 3. Load balanced
+  1. Integrate Consul, Vault and Nomad
+  2. Deploy a web app
 ```
 
 ---
 
 # Demo
 
-```
- 1. Integrate Consul, Vault and Nomad
- 2. Deploy a web app
- 3. Load balanced
- 4. TLS
-```
-
----
-
-# Demo
+## Goal
 
 ```
- 1. Integrate Consul, Vault and Nomad
- 2. Deploy a web app
- 3. Load balanced
- 4. TLS
- 5. No dev mode
+  1. Integrate Consul, Vault and Nomad
+  2. Deploy a web app
+  3. Load balanced
 ```
 
 ---
 
 # Demo
 
-```
- 1. Integrate Consul, Vault and Nomad
- 2. Deploy a web app
- 3. Load balanced
- 4. TLS
- 5. No dev mode
- 6. Multipass
-```
-
----
-
-# Demo
+## Goal
 
 ```
- 1. Integrate Consul, Vault and Nomad
- 2. Deploy a web app
- 3. Load balanced
- 4. TLS
- 5. No dev mode
- 6. Multipass
- 7. 100% CLI
+  1. Integrate Consul, Vault and Nomad
+  2. Deploy a web app
+  3. Load balanced
+  4. TLS
 ```
 
 ---
 
 # Demo
 
+## Goal
+
 ```
- 1. Integrate Consul, Vault and Nomad
- 2. Deploy a web app
- 3. Load balanced
- 4. TLS
- 5. No dev mode
- 6. Multipass
- 7. 100% CLI
+  1. Integrate Consul, Vault and Nomad
+  2. Deploy a web app
+  3. Load balanced
+  4. TLS
+  5. No dev mode
+```
+
+---
+
+# Demo
+
+## Goal
+
+```
+  1. Integrate Consul, Vault and Nomad
+  2. Deploy a web app
+  3. Load balanced
+  4. TLS
+  5. No dev mode
+  6. Multipass
+```
+
+---
+
+# Demo
+
+## Goal
+
+```
+  1. Integrate Consul, Vault and Nomad
+  2. Deploy a web app
+  3. Load balanced
+  4. TLS
+  5. No dev mode
+  6. Multipass
+  7. 100% CLI
+```
+
+---
+
+# Demo
+
+## Goal
+
+```
+  1. Integrate Consul, Vault and Nomad
+  2. Deploy a web app
+  3. Load balanced
+  4. TLS
+  5. No dev mode
+  6. Multipass
+  7. 100% CLI
 ```
 
 ## Disclaimer
@@ -1376,14 +1397,16 @@ No complete integration guide...
 
 # Demo
 
+## Goal
+
 ```
- 1. Integrate Consul, Vault and Nomad
- 2. Deploy a web app
- 3. Load balanced
- 4. TLS
- 5. No dev mode
- 6. Multipass
- 7. 100% CLI
+  1. Integrate Consul, Vault and Nomad
+  2. Deploy a web app
+  3. Load balanced
+  4. TLS
+  5. No dev mode
+  6. Multipass
+  7. 100% CLI
 ```
 
 ## Disclaimer
@@ -1413,24 +1436,26 @@ No complete integration guide...
 
 
 
-
-                         +---server1---+     +---server2---+     +---server3---+         
-                         |             |     |             |     |             |         
-                         | Consul (C)  |     | Consul (C)  |     | Consul (C)  |         
-                         | Vault  (V)  | <-> | Vault  (V)  | <-> | Vault  (V)  |         
-                         | Nomad  (N)  |     | Nomad  (N)  |     | Nomad  (N)  |         
-                         |             |     |             |     |             |         
-                         +-------------+     +-------------+     +-------------+         
-                                +-------------------+-------------------+
-                                                    |
-                                                    +                    
-                  +---client1---+   +---client2---+   +---client3---+   +---client4---+
-                  |             |   |             |   |             |   |             |
-                  |  C + V + N  |   |  C + V + N  |   |  C + V + N  |   |  C + V + N  |
-                  |  ---------  |   |  ---------  |   |  ---------  |   |  ---------  |
-                  |   Traefik   |   |   Web App   |   |   Web App   |   |   Web App   |
-                  |             |   |             |   |             |   |             |
-                  +-------------+   +-------------+   +-------------+   +-------------+
+                           
+                           
+                                                    +---server1---+     +---server2---+     +---server3---+         
+                                                    |             |     |             |     |             |         
+                                                    | Consul (C)  |     | Consul (C)  |     | Consul (C)  |         
+                                                    | Vault  (V)  | <-> | Vault  (V)  | <-> | Vault  (V)  |         
+                                                    | Nomad  (N)  |     | Nomad  (N)  |     | Nomad  (N)  |         
+                                                    |             |     |             |     |             |         
+                                                    +-------------+     +-------------+     +-------------+         
+                                                           |                   |                   |
+                                                           +-------------------+-------------------+
+                                                                               |
+                                                                               +                    
+                                             +---client1---+   +---client2---+   +---client3---+   +---client4---+
+                                             |             |   |             |   |             |   |             |
+                                             |  C + V + N  |   |  C + V + N  |   |  C + V + N  |   |  C + V + N  |
+                                             |  ---------  |   |  ---------  |   |  ---------  |   |  ---------  |
+                                             |   Traefik   |   |   Web App   |   |   Web App   |   |   Web App   |
+                                             |             |   |             |   |             |   |             |
+                                             +-------------+   +-------------+   +-------------+   +-------------+
 ```
 
 ---
@@ -1455,13 +1480,11 @@ No complete integration guide...
 #### General server configuration
 
 ```
-   1. apt packages
-   2. hashicorp repository
-   3. docker (clients)
-   4. dnsmasq
-   5. pip + some packages
-   6. tools that should be standard
-      1. atop, jq, lynx, tree, etc
+   1. Install hashicorp repository + binaries
+   2. Install docker (on clients)
+   3. Install and configure dnsmasq
+   4. Pip packages for Ansible to connect to Vault and Nomad
+   5. Basic packages like atop, jq, lynx, tree
 
    Playbook run took 0 days, 0 hours, 5 minutes, 7 seconds
 ```
@@ -1497,7 +1520,7 @@ No complete integration guide...
    3. Consul is bootstrapped - token is saved on workstation
    4. Several Consul policies are created
    5. Default Consul policy is modified
-      1. To allow DNS lookups for dnsmasq
+      a. To allow DNS lookups for dnsmasq
    6. CNI (Container Network Interface) plugin is installed
 
    Playbook run took 0 days, 0 hours, 1 minutes, 2 seconds
@@ -1513,9 +1536,9 @@ No complete integration guide...
 
 ```
    1. Creates a TLS certificate for the Vault nodes
-      1. Signed by our private CA
+      a. Signed by our private CA
    2. Uses Consul as storage backend
-      1. Creates Consul ACL tokens for Vault
+      a. Creates Consul ACL tokens for Vault
    3. Initializes Vault on server1
    4. Unseals the Vault
    5. Creates admin policy
@@ -1592,6 +1615,7 @@ No complete integration guide...
    1. Pulls a container image
    2. Registers itself within Consul
    3. Registers itself within Traefik through tags
+   4. Can be scaled to fit your need
 ```
 
 ---
