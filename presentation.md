@@ -153,7 +153,7 @@ paging: HashiTalks 2023
 ### Workload and application scheduler
 
 ```
-   [x] Containers
+   [✓] Containers
 ```
 
 ---
@@ -168,8 +168,8 @@ paging: HashiTalks 2023
 ### Workload and application scheduler
 
 ```
-   [x] Containers
-   [x] Microservices
+   [✓] Containers
+   [✓] Microservices
 ```
 
 ---
@@ -184,9 +184,9 @@ paging: HashiTalks 2023
 ### Workload and application scheduler
 
 ```
-   [x] Containers
-   [x] Microservices
-   [x] Scalable
+   [✓] Containers
+   [✓] Microservices
+   [✓] Scalable
 
 ```
 
@@ -202,9 +202,9 @@ paging: HashiTalks 2023
 ### Workload and application scheduler
 
 ```
-   [x] Containers
-   [x] Microservices
-   [x] Scalable
+   [✓] Containers
+   [✓] Microservices
+   [✓] Scalable
 
 ```
 
@@ -225,34 +225,9 @@ paging: HashiTalks 2023
 ### Workload and application scheduler
 
 ```
-   [x] Containers
-   [x] Microservices
-   [x] Scalable
-
-```
-
-## Consul
-
-### Service networking solution
-
-```
-```
-
----
-
-# HashiCorp
-
-```
-```
-
-## Nomad
-
-### Workload and application scheduler
-
-```
-   [x] Containers
-   [x] Microservices
-   [x] Scalable
+   [✓] Containers
+   [✓] Microservices
+   [✓] Scalable
 
 ```
 
@@ -261,7 +236,6 @@ paging: HashiTalks 2023
 ### Service networking solution
 
 ```
-   [x] Service mesh
 ```
 
 ---
@@ -276,9 +250,9 @@ paging: HashiTalks 2023
 ### Workload and application scheduler
 
 ```
-   [x] Containers
-   [x] Microservices
-   [x] Scalable
+   [✓] Containers
+   [✓] Microservices
+   [✓] Scalable
 
 ```
 
@@ -287,9 +261,7 @@ paging: HashiTalks 2023
 ### Service networking solution
 
 ```
-   [x] Service mesh
-   [x] Works with Nomad
-
+   [✓] Service mesh
 ```
 
 ---
@@ -304,9 +276,9 @@ paging: HashiTalks 2023
 ### Workload and application scheduler
 
 ```
-   [x] Containers
-   [x] Microservices
-   [x] Scalable
+   [✓] Containers
+   [✓] Microservices
+   [✓] Scalable
 
 ```
 
@@ -315,38 +287,8 @@ paging: HashiTalks 2023
 ### Service networking solution
 
 ```
-   [x] Service mesh
-   [x] Works with Nomad
-   [x] Scalable
-```
-
----
-
-# HashiCorp
-
-```
-```
-
-## Nomad
-
-### Workload and application scheduler
-
-```
-   [x] Containers
-   [x] Microservices
-   [x] Scalable
-
-```
-
-## Consul
-
-### Service networking solution
-
-```
-   [x] Service mesh
-   [x] Works with Nomad
-   [x] Scalable
-   [x] Flexible
+   [✓] Service mesh
+   [✓] Works with Nomad
 
 ```
 
@@ -362,9 +304,9 @@ paging: HashiTalks 2023
 ### Workload and application scheduler
 
 ```
-   [x] Containers
-   [x] Microservices
-   [x] Scalable
+   [✓] Containers
+   [✓] Microservices
+   [✓] Scalable
 
 ```
 
@@ -373,10 +315,68 @@ paging: HashiTalks 2023
 ### Service networking solution
 
 ```
-   [x] Service mesh
-   [x] Works with Nomad
-   [x] Scalable
-   [x] Flexible
+   [✓] Service mesh
+   [✓] Works with Nomad
+   [✓] Scalable
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [✓] Containers
+   [✓] Microservices
+   [✓] Scalable
+
+```
+
+## Consul
+
+### Service networking solution
+
+```
+   [✓] Service mesh
+   [✓] Works with Nomad
+   [✓] Scalable
+   [✓] Flexible
+
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [✓] Containers
+   [✓] Microservices
+   [✓] Scalable
+
+```
+
+## Consul
+
+### Service networking solution
+
+```
+   [✓] Service mesh
+   [✓] Works with Nomad
+   [✓] Scalable
+   [✓] Flexible
 
 ```
 
@@ -397,9 +397,9 @@ paging: HashiTalks 2023
 ### Workload and application scheduler
 
 ```
-   [x] Containers
-   [x] Microservices
-   [x] Scalable
+   [✓] Containers
+   [✓] Microservices
+   [✓] Scalable
 
 ```
 
@@ -408,47 +408,10 @@ paging: HashiTalks 2023
 ### Service networking solution
 
 ```
-   [x] Service mesh
-   [x] Works with Nomad
-   [x] Scalable
-   [x] Flexible
-
-```
-
-## Vault
-
-### Secrets management tool
-
-```
-```
-
----
-
-# HashiCorp
-
-```
-```
-
-## Nomad
-
-### Workload and application scheduler
-
-```
-   [x] Containers
-   [x] Microservices
-   [x] Scalable
-
-```
-
-## Consul
-
-### Service networking solution
-
-```
-   [x] Service mesh
-   [x] Works with Nomad
-   [x] Scalable
-   [x] Flexible
+   [✓] Service mesh
+   [✓] Works with Nomad
+   [✓] Scalable
+   [✓] Flexible
 
 ```
 
@@ -457,7 +420,6 @@ paging: HashiTalks 2023
 ### Secrets management tool
 
 ```
-   [x] Sensitive data
 ```
 
 ---
@@ -472,9 +434,9 @@ paging: HashiTalks 2023
 ### Workload and application scheduler
 
 ```
-   [x] Containers
-   [x] Microservices
-   [x] Scalable
+   [✓] Containers
+   [✓] Microservices
+   [✓] Scalable
 
 ```
 
@@ -483,10 +445,10 @@ paging: HashiTalks 2023
 ### Service networking solution
 
 ```
-   [x] Service mesh
-   [x] Works with Nomad
-   [x] Scalable
-   [x] Flexible
+   [✓] Service mesh
+   [✓] Works with Nomad
+   [✓] Scalable
+   [✓] Flexible
 
 ```
 
@@ -495,8 +457,7 @@ paging: HashiTalks 2023
 ### Secrets management tool
 
 ```
-   [x] Sensitive data
-   [x] Secure
+   [✓] Sensitive data
 ```
 
 ---
@@ -511,9 +472,9 @@ paging: HashiTalks 2023
 ### Workload and application scheduler
 
 ```
-   [x] Containers
-   [x] Microservices
-   [x] Scalable
+   [✓] Containers
+   [✓] Microservices
+   [✓] Scalable
 
 ```
 
@@ -522,10 +483,10 @@ paging: HashiTalks 2023
 ### Service networking solution
 
 ```
-   [x] Service mesh
-   [x] Works with Nomad
-   [x] Scalable
-   [x] Flexible
+   [✓] Service mesh
+   [✓] Works with Nomad
+   [✓] Scalable
+   [✓] Flexible
 
 ```
 
@@ -534,9 +495,8 @@ paging: HashiTalks 2023
 ### Secrets management tool
 
 ```
-   [x] Sensitive data
-   [x] Secure
-   [x] Works with Nomad
+   [✓] Sensitive data
+   [✓] Secure
 ```
 
 ---
@@ -551,9 +511,9 @@ paging: HashiTalks 2023
 ### Workload and application scheduler
 
 ```
-   [x] Containers
-   [x] Microservices
-   [x] Scalable
+   [✓] Containers
+   [✓] Microservices
+   [✓] Scalable
 
 ```
 
@@ -562,10 +522,10 @@ paging: HashiTalks 2023
 ### Service networking solution
 
 ```
-   [x] Service mesh
-   [x] Works with Nomad
-   [x] Scalable
-   [x] Flexible
+   [✓] Service mesh
+   [✓] Works with Nomad
+   [✓] Scalable
+   [✓] Flexible
 
 ```
 
@@ -574,10 +534,9 @@ paging: HashiTalks 2023
 ### Secrets management tool
 
 ```
-   [x] Sensitive data
-   [x] Secure
-   [x] Works with Nomad
-   [x] Works with Consul
+   [✓] Sensitive data
+   [✓] Secure
+   [✓] Works with Nomad
 ```
 
 ---
@@ -592,9 +551,9 @@ paging: HashiTalks 2023
 ### Workload and application scheduler
 
 ```
-   [x] Containers
-   [x] Microservices
-   [x] Scalable
+   [✓] Containers
+   [✓] Microservices
+   [✓] Scalable
 
 ```
 
@@ -603,10 +562,10 @@ paging: HashiTalks 2023
 ### Service networking solution
 
 ```
-   [x] Service mesh
-   [x] Works with Nomad
-   [x] Scalable
-   [x] Flexible
+   [✓] Service mesh
+   [✓] Works with Nomad
+   [✓] Scalable
+   [✓] Flexible
 
 ```
 
@@ -615,11 +574,52 @@ paging: HashiTalks 2023
 ### Secrets management tool
 
 ```
-   [x] Sensitive data
-   [x] Secure
-   [x] Works with Nomad
-   [x] Works with Consul
-   [x] Scalable
+   [✓] Sensitive data
+   [✓] Secure
+   [✓] Works with Nomad
+   [✓] Works with Consul
+```
+
+---
+
+# HashiCorp
+
+```
+```
+
+## Nomad
+
+### Workload and application scheduler
+
+```
+   [✓] Containers
+   [✓] Microservices
+   [✓] Scalable
+
+```
+
+## Consul
+
+### Service networking solution
+
+```
+   [✓] Service mesh
+   [✓] Works with Nomad
+   [✓] Scalable
+   [✓] Flexible
+
+```
+
+## Vault
+
+### Secrets management tool
+
+```
+   [✓] Sensitive data
+   [✓] Secure
+   [✓] Works with Nomad
+   [✓] Works with Consul
+   [✓] Scalable
 
 ```
 
@@ -635,9 +635,9 @@ paging: HashiTalks 2023
 ### Workload and application scheduler
 
 ```
-   [x] Containers
-   [x] Microservices
-   [x] Scalable
+   [✓] Containers
+   [✓] Microservices
+   [✓] Scalable
 
 ```
 
@@ -646,10 +646,10 @@ paging: HashiTalks 2023
 ### Service networking solution
 
 ```
-   [x] Service mesh
-   [x] Works with Nomad
-   [x] Scalable
-   [x] Flexible
+   [✓] Service mesh
+   [✓] Works with Nomad
+   [✓] Scalable
+   [✓] Flexible
 
 ```
 
@@ -658,11 +658,11 @@ paging: HashiTalks 2023
 ### Secrets management tool
 
 ```
-   [x] Sensitive data
-   [x] Secure
-   [x] Works with Nomad
-   [x] Works with Consul
-   [x] Scalable
+   [✓] Sensitive data
+   [✓] Secure
+   [✓] Works with Nomad
+   [✓] Works with Consul
+   [✓] Scalable
 
 ```
 
@@ -680,9 +680,9 @@ paging: HashiTalks 2023
 ### Workload and application scheduler
 
 ```
-   [x] Containers
-   [x] Microservices
-   [x] Scalable
+   [✓] Containers
+   [✓] Microservices
+   [✓] Scalable
 
 ```
 
@@ -691,10 +691,10 @@ paging: HashiTalks 2023
 ### Service networking solution
 
 ```
-   [x] Service mesh
-   [x] Works with Nomad
-   [x] Scalable
-   [x] Flexible
+   [✓] Service mesh
+   [✓] Works with Nomad
+   [✓] Scalable
+   [✓] Flexible
 
 ```
 
@@ -703,11 +703,11 @@ paging: HashiTalks 2023
 ### Secrets management tool
 
 ```
-   [x] Sensitive data
-   [x] Secure
-   [x] Works with Nomad
-   [x] Works with Consul
-   [x] Scalable
+   [✓] Sensitive data
+   [✓] Secure
+   [✓] Works with Nomad
+   [✓] Works with Consul
+   [✓] Scalable
 
 ```
 
