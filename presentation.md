@@ -1360,6 +1360,50 @@ No complete integration guide...
 
 # Demo
 
+```
+ 1. Integrate Consul, Vault and Nomad
+ 2. Deploy a web app
+ 3. Load balanced
+ 4. TLS
+ 5. No dev mode
+ 6. Multipass
+ 7. 100% CLI
+```
+
+## Disclaimer
+
+---
+
+# Demo
+
+```
+ 1. Integrate Consul, Vault and Nomad
+ 2. Deploy a web app
+ 3. Load balanced
+ 4. TLS
+ 5. No dev mode
+ 6. Multipass
+ 7. 100% CLI
+```
+
+## Disclaimer
+
+### This is only meant for a demo / test environment
+
+```
+   For this demo, server roles have been combined to limit the number of instances.
+   Please do not replicate this in a production environment. Read through all of the
+   reference architecture plans on the developer portal.
+
+   Also, in a production environment, do not save your bootstrap output to a file, for
+   Vault you can safely distribute the unseal keys to the key-share holders by means of
+   PGP.
+```
+
+---
+
+# Demo
+
 ## Schematic overview
 
 ```
