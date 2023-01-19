@@ -5,6 +5,10 @@ date: AT Computing
 paging: HashiTalks 2023
 ---
 
+#
+
+---
+
 # Imagine
 
 ---
@@ -848,7 +852,7 @@ paging: HashiTalks 2023
 
 ## Ansible
 
-### Configuration management
+### Configuration management tool
 
 ---
 
@@ -856,7 +860,7 @@ paging: HashiTalks 2023
 
 ## Ansible
 
-### Configuration management
+### Configuration management tool
 
 ```
    1. Predictable
@@ -868,7 +872,7 @@ paging: HashiTalks 2023
 
 ## Ansible
 
-### Configuration management
+### Configuration management tool
 
 ```
    1. Predictable
@@ -881,7 +885,7 @@ paging: HashiTalks 2023
 
 ## Ansible
 
-### Configuration management
+### Configuration management tool
 
 ```
    1. Predictable
@@ -895,7 +899,7 @@ paging: HashiTalks 2023
 
 ## Ansible
 
-### Configuration management
+### Configuration management tool
 
 ```
    1. Predictable
@@ -1273,6 +1277,39 @@ paging: HashiTalks 2023
 ```
 
 ### Co-organizer Amsterdam HUG
+
+---
+
+# Session
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                                                                     │
+│                                Nomad                                │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+                                                                       
+                                                                       
+┌─────────────────────────────────────────────────────────────────────┐
+│                                                                     │
+│                                Vault                                │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+                                                                       
+                                                                       
+┌─────────────────────────────────────────────────────────────────────┐
+│                                                                     │
+│                               Consul                                │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+                                                                       
+                                                                       
+┌─────────────────────────────────────────────────────────────────────┐
+│                                                                     │
+│                               Ansible                               │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
