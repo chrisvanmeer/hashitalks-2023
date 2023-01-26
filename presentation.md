@@ -5,6 +5,8 @@ date: AT Computing
 paging: HashiTalks 2023
 ---
 
+---
+
 #
 
 ---
@@ -912,6 +914,10 @@ paging: HashiTalks 2023
 
 # &#128161;
 
+---
+
+# &#128161;
+
 ## Share
 
 ---
@@ -1076,8 +1082,6 @@ paging: HashiTalks 2023
 ```
 
 ## In a repository near you
-
-### Save time
 
 ---
 
@@ -1533,7 +1537,6 @@ paging: HashiTalks 2023
   4. TLS
   5. No dev mode
   6. Multipass
-  7. 100% CLI
 ```
 
 ---
@@ -1549,7 +1552,6 @@ paging: HashiTalks 2023
   4. TLS
   5. No dev mode
   6. Multipass
-  7. 100% CLI
 ```
 
 ## Disclaimer
@@ -1567,7 +1569,6 @@ paging: HashiTalks 2023
   4. TLS
   5. No dev mode
   6. Multipass
-  7. 100% CLI
 ```
 
 ## Disclaimer
